@@ -1,7 +1,5 @@
 ﻿using Logic;
-using MediatR;
-using System.Net.NetworkInformation;
-using System.Reflection.Metadata;
+using Mediator;
 
 namespace Handlers;
 
@@ -20,8 +18,8 @@ public class OrderHandler : IRequestHandler<OrderRequest, OrderedEvent>
         _timeProvider = timeProvider ?? TimeProvider.System;
     }
 
-    async Task<OrderedEvent> IRequestHandler<OrderRequest, OrderedEvent>.Handle(
-        OrderRequest request, 
+    async ValueTask<OrderedEvent> IRequestHandler<OrderRequest, OrderedEvent>.Handle(
+        OrderRequest request,
         CancellationToken cancellationToken)
     {
         var e = new OrderedEvent(request.Id, _timeProvider.GetUtcNow());

@@ -13,13 +13,13 @@ public class OrderStreamHandler : IStreamRequestHandler<OrderStreamRequest, Orde
     }
 
     async IAsyncEnumerable<OrderRequest> IStreamRequestHandler<OrderStreamRequest, OrderRequest>.Handle(
-        OrderStreamRequest request, 
+        OrderStreamRequest request,
         CancellationToken cancellationToken)
     {
         for (var i = 0; i < 10; i++)
         {
             await Task.Delay(TimeSpan.FromSeconds(1), _timeProvider);
-            yield return new OrderRequest(request.Id, request.ProductName, i % 3 + 1, 100 + (i % 6) );
+            yield return new OrderRequest(request.Id, request.ProductName, i % 3 + 1, 100 + (i % 6));
         }
     }
 }

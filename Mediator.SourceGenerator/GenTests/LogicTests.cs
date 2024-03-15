@@ -1,12 +1,9 @@
-using MediatR;
-using System.Diagnostics;
-using System.Net.NetworkInformation;
 using Cocona;
-using Microsoft.Extensions.DependencyInjection;
-using Logic;
-using Microsoft.Extensions.Logging;
 using FakeItEasy;
-using Handlers;
+using Logic;
+using Mediator;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Xunit.Abstractions;
 
 namespace Tests;
@@ -38,10 +35,7 @@ public class LogicTests
             cfg.AddProvider(_loggerProvider);
             cfg.AddJsonConsole();
         });
-        services.AddMediatR(cfg =>
-        {
-            cfg.RegisterServicesFromAssembly(typeof(Handlers.OrderHandler).Assembly);
-        });
+        services.AddMediator();
         var app = builder.Build();
         IServiceProvider serviceProvider = app.Services;
         _mediator = serviceProvider.GetRequiredService<IMediator>();
