@@ -13,11 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hosting", "Hosting\Hosting.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{53F0A459-D6EB-4630-9171-9B8AC67C0D85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handlers", "Handlers\Handlers.csproj", "{79060730-32C5-446E-BC60-C68C3F504C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handlers", "Handlers\Handlers.csproj", "{79060730-32C5-446E-BC60-C68C3F504C38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FAFBF26C-3DFC-40D1-9D25-72BEC1B2F227}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIs", "APIs\APIs.csproj", "{92B39C8F-93BC-4708-8058-C4EE9897CF63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{FAFBF26C-3DFC-40D1-9D25-72BEC1B2F227}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{FAFBF26C-3DFC-40D1-9D25-72BEC1B2F227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFBF26C-3DFC-40D1-9D25-72BEC1B2F227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFBF26C-3DFC-40D1-9D25-72BEC1B2F227}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92B39C8F-93BC-4708-8058-C4EE9897CF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92B39C8F-93BC-4708-8058-C4EE9897CF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92B39C8F-93BC-4708-8058-C4EE9897CF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92B39C8F-93BC-4708-8058-C4EE9897CF63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

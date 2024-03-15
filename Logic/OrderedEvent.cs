@@ -1,4 +1,6 @@
-﻿namespace Logic;
+﻿using MediatR;
 
-public readonly record struct OrderedEvent(int Id, DateTimeOffset OrderedAt);
+namespace Logic;
+
+public readonly record struct OrderedEvent(int Id, DateTimeOffset OrderedAt): INotification;
 
