@@ -1,7 +1,7 @@
-﻿using Logic;
+﻿using Bnaya.Samples.MediateRSample.Logic;
 using Microsoft.Extensions.Logging;
 
-namespace Handlers;
+namespace Bnaya.Samples.MediateRSample.Handlers;
 
 public static partial class HandleOrderEventNotificationsLogs
 {

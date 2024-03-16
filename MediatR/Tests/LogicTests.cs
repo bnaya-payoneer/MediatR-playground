@@ -1,12 +1,12 @@
+using Bnaya.Samples.MediateRSample.Logic;
 using Cocona;
 using FakeItEasy;
-using Logic;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Xunit.Abstractions;
 
-namespace Tests;
+namespace Bnaya.Samples.MediateRSample.Tests;
 
 public class LogicTests
 {

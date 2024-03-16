@@ -1,4 +1,4 @@
-using Logic;
+using Bnaya.Samples.GenMediatorSample.Logic;
 using Mediator;
 using Microsoft.AspNetCore.Mvc;
 

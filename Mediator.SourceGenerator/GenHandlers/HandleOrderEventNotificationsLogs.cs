@@ -1,7 +1,7 @@
-﻿using Logic;
+﻿using Bnaya.Samples.GenMediatorSample.Logic;
 using Microsoft.Extensions.Logging;
 
-namespace Handlers;
+namespace Bnaya.Samples.GenMediatorSample.Handlers;
 
 public static partial class HandleOrderEventNotificationsLogs
 {

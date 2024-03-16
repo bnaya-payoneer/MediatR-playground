@@ -1,7 +1,7 @@
-﻿using Logic;
+﻿using Bnaya.Samples.GenMediatorSample.Logic;
 using Mediator;
 
-namespace Handlers;
+namespace Bnaya.Samples.GenMediatorSample.Handlers;
 
 public class OrderStreamHandler : IStreamRequestHandler<OrderStreamRequest, OrderRequest>
 {

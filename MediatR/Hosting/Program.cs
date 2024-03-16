@@ -1,5 +1,5 @@
-using Handlers;
-using Logic;
+using Bnaya.Samples.MediateRSample.Handlers;
+using Bnaya.Samples.MediateRSample.Logic;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

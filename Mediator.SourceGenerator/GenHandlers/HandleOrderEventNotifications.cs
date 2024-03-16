@@ -1,8 +1,8 @@
-﻿using Logic;
+﻿using Bnaya.Samples.GenMediatorSample.Logic;
 using Mediator;
 using Microsoft.Extensions.Logging;
 
-namespace Handlers;
+namespace Bnaya.Samples.GenMediatorSample.Handlers;
 public partial class HandleOrderEventNotifications : INotificationHandler<OrderedEvent>
 {
     private readonly ILogger<HandleOrderEventNotifications> _logger;
